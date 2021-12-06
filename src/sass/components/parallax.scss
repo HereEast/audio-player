@@ -1,0 +1,22 @@
+.parallax {
+  background-image: url("../images/parallax.jpg");
+  width: 100vw;
+  height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+///////////////////
+// MEDIA QUERIES //
+///////////////////
+
+// 768
+@media all and (max-width: 768px) {
+  .parallax {
+    height: 300px; 
+  }
+}

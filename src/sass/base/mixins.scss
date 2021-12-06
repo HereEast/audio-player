@@ -1,0 +1,11 @@
+@mixin font ($family, $size, $height, $weight) {
+    font-family: $family;
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+}
+
+@mixin max-width ($max, $width) {
+    max-width: $max;
+    width: $width;
+}

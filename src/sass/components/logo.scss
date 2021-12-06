@@ -1,0 +1,35 @@
+.logo {
+    margin-right: 45px;
+
+    .logo__svg {
+      width: 193px;
+      height: 27px;
+
+      .logo__path {
+        fill: $color-white;
+        transition: $hover-transition;
+      }
+    }
+
+    &:hover {
+      .logo__svg {
+        .logo__path {
+          fill: $color-primary;
+        }
+      }
+    }
+}
+
+///////////////////
+// MEDIA QUERIES //
+///////////////////
+
+// 420 
+@media all and (max-width: 420px) {
+  .logo {
+    .logo__svg {
+      width: 128px;
+      height: 18px;
+    }
+  }
+}

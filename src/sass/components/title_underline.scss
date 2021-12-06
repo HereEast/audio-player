@@ -1,0 +1,19 @@
+.title__underline {
+    background-color: $color-secondary;
+    height: 3px;
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+
+@media all and (max-width: 1024px) {
+    .title__underline {
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .title__underline {
+        margin-bottom: 40px;
+    }
+}
