@@ -1,6 +1,6 @@
 {
-  "name": "player",
-  "description": "Audio Player",
+  "name": "museum",
+  "description": "Museum Website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
