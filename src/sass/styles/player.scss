@@ -1,5 +1,53 @@
-body {
+* {
     font-family: "Roboto";
     font-weight: 300;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: white;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    // background-image: url('../images/bg.png');
+    background-position: 50% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    background-blend-mode: multiply;
+    transition: background-image 0.8s ease-in-out;
+
+    .main_container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.player-controls {
+    width: 100%;
+    height: 120px;
+    background: #FBFBFB;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    opacity: 0.8;
+    transition: 0.3s;
+
+    &:hover,
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.bg-prev {
+    margin-right: 30px;
 }
