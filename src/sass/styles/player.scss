@@ -12,6 +12,7 @@
     width: 100%;
     height: 100vh;
     // background-image: url('../images/bg.png');
+    background-color: rgba(0, 0, 0, 0.2);
     background-position: 50% 0%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,27 +28,93 @@
     }
 }
 
-.player-controls {
+.controls-container {
     width: 100%;
     height: 120px;
-    background: #FBFBFB;
-}
-
-.footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background: #FBFBFB;
+    margin-bottom: 40px;
+    padding: 0 50px;
 }
+
+// BUTTONS
+
+.controls-btn {
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 16px;
+    color: #000;
+    padding: 0;
+    transition: 0.4s;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.play_btn {
+    width: 14px;
+    height: 24px;
+    background-image: url("../images/ic-play.svg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    margin-right: 20px;
+}
+
+.prev-track_btn {
+    margin-right: 8px;
+}
+
+.timer {
+    font-size: 16px;
+    color: #000;
+    margin-left: 30px;
+}
+
+
+///////////
+// LINKS //
+///////////
 
 .link {
     opacity: 0.8;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
     transition: 0.3s;
 
-    &:hover,
     &:hover {
         opacity: 1;
+        text-decoration-color: #FFF;
     }
+}
+
+.selected-track {
+    opacity: 1;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
 }
 
 .bg-prev {
     margin-right: 30px;
+}
+
+// FOOTER
+
+.footer {
+    display: flex;
+    justify-content: space-between;
 }
