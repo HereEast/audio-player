@@ -39,20 +39,23 @@ async function changeBackgroundImage() {
 changeBackgroundImage();
 
 nextImageButton.addEventListener("click", changeBackgroundImage);
-prevImageButton.addEventListener("click", showPrevUnsplashImage);
-prevImageButton.addEventListener("click", showPrevFolderImage);
+prevImageButton.addEventListener("click", showPrevImage);
 
+function showPrevImage() {
+    if(imageLinks.length === 0) {
+        showPrevFolderImage();
+    } else {
+        showPrevUnsplashImage();
+    }
+}
 
 function showPrevUnsplashImage() {
     imageLinks.reverse();
     let prevImageURL = imageLinks[index];
     bg.style.backgroundImage = `url(${prevImageURL})`;
 
+    if(index >= imageLinks.length - 1) return;
     index++;
-
-    if(index === imageLinks.length - 1) {
-        return;
-    }
 }
 
 function showNextFolderImage() {
@@ -64,7 +67,7 @@ function showNextFolderImage() {
 }
 
 function showPrevFolderImage() {
-    if(imgIndex === 0) imgIndex = imgTotalNum - 1;
+    if(imgIndex === 0) imgIndex = imgTotalNum - 2;
     let imgURL = `url('../images/bg/0${imgIndex}.png')`;
     bg.style.backgroundImage = imgURL;
 
