@@ -72,6 +72,15 @@
     margin-right: 20px;
 }
 
+.pause_btn {
+    width: 14px;
+    height: 24px;
+    background-image: url("../images/ic-pause.svg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    margin-right: 20px;
+}
+
 .prev-track_btn {
     margin-right: 8px;
 }
@@ -87,13 +96,15 @@
 // LINKS //
 ///////////
 
-.link {
+.link,
+.track-name {
     opacity: 0.8;
     text-decoration: underline;
     text-decoration-color: transparent;
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
     transition: 0.3s;
+    cursor: pointer;
 
     &:hover {
         opacity: 1;
@@ -104,6 +115,7 @@
 .selected-track {
     opacity: 1;
     text-decoration: underline;
+    text-decoration-color: #FFF;
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
 }

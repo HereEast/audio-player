@@ -24,12 +24,8 @@
     background: linear-gradient(to right, transparent 0%, transparent 42%, 
                                           #000 42%, #000 48%,
                                           transparent 48%, transparent 100%);
-    opacity: 0;
     cursor: pointer;
     transition: all 0.3s;
     -webkit-appearance: none;
 }
 
-.progress-bar::-webkit-slider-thumb:hover {
-    opacity: 1;
-}
