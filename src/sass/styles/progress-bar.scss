@@ -9,8 +9,8 @@
 .progress-bar {
     height: 1px;
     width: 100%;
-    background: linear-gradient(to right, #000 0%, #000 40%, 
-                                          #D4D4D4 40%, #D4D4D4 100%);
+    background: linear-gradient(to right, #000 0%, #000 0%, 
+                                          #D4D4D4 0%, #D4D4D4 100%);
     border: none;
     border-radius: 8px;
     outline: none;
@@ -19,11 +19,12 @@
 }
   
 .progress-bar::-webkit-slider-thumb {
-    width: 16px;
+    width: 1px;
     height: 24px;
-    background: linear-gradient(to right, transparent 0%, transparent 42%, 
-                                          #000 42%, #000 48%,
-                                          transparent 48%, transparent 100%);
+    background: #000;
+    // background: linear-gradient(to right, transparent 0%, transparent 42%, 
+    //                                       #000 42%, #000 48%,
+    //                                       transparent 48%, transparent 100%);
     cursor: pointer;
     transition: all 0.3s;
     -webkit-appearance: none;
