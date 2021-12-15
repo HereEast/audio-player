@@ -2,7 +2,7 @@
     font-family: "Roboto";
     font-weight: 300;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 32px;
     text-transform: uppercase;
     color: white;
     box-sizing: border-box;
@@ -85,10 +85,15 @@
     margin-right: 8px;
 }
 
+.timer-container {
+    width: 50px;
+}
+
 .timer {
     font-size: 16px;
     color: #000;
     margin-left: 30px;
+    display: inline;
 }
 
 

@@ -19,14 +19,12 @@
 }
   
 .progress-bar::-webkit-slider-thumb {
-    width: 1px;
-    height: 24px;
-    background: #000;
-    // background: linear-gradient(to right, transparent 0%, transparent 42%, 
-    //                                       #000 42%, #000 48%,
-    //                                       transparent 48%, transparent 100%);
-    cursor: pointer;
-    transition: all 0.3s;
-    -webkit-appearance: none;
+    // width: 1px;
+    // height: 24px;
+    // background: #000;
+    // cursor: pointer;
+    // transition: all 0.3s;
+    // -webkit-appearance: none;
+    opacity: 0;
 }
 

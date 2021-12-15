@@ -22,7 +22,7 @@ async function changeBackgroundImage() {
         let imgURL = data.urls.regular;
         bg.style.backgroundImage = `url(${imgURL})`;
         imageLinks.push(imgURL);
-        console.log(imageLinks.length);
+        // console.log(imageLinks.length);
     } 
     
     catch(e) {
