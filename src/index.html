@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="./images/favic_audioplayer.png">
+  </head>
+
+<body>
+    <main class="main">
+        <div class="main_container">
+            <div class="player">
+                <!-- <audio></audio> -->
+                
+                <div class="controls-container">
+                    <div class="buttons">
+                        <button class="play_btn controls-btn"></button>
+                        <button class="prev-track_btn controls-btn">P</button>
+                        <button class="next-track_btn controls-btn">N</button>
+                    </div>
+
+                    <div class="progress-container">
+                        <input class="progress-bar" type="range"
+                               min="0" max="100" value="0" step="0.1">
+                    </div>
+
+                    <div class="timer">00:00</div>
+                </div>
+
+                <!-- PLAYLIST -->
+                <ul class="playlist"></ul>
+
+            </div>
+
+            <div class="footer">
+                <p>Audio Player (c)2021</p>
+                <div class="bg-buttons">
+                    <a class="bg-prev link" href="#">Prev</a>
+                    <a class="bg-next link" href="#">Next</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
